@@ -60,3 +60,4 @@ C:\Users\Public\Development\Projects\AcademicPlatformApisWithEfCore\AcademicPlat
 C:\Users\Public\Development\Projects\AcademicPlatformApisWithEfCore\AcademicPlatformApisWithEfCore\obj\Debug\net5.0\ref\AcademicPlatformApisWithEfCore.dll
 C:\Users\Public\Development\Projects\AcademicPlatformApisWithEfCore\AcademicPlatformApisWithEfCore\obj\Debug\net5.0\AcademicPlatformApisWithEfCore.pdb
 C:\Users\Public\Development\Projects\AcademicPlatformApisWithEfCore\AcademicPlatformApisWithEfCore\obj\Debug\net5.0\AcademicPlatformApisWithEfCore.genruntimeconfig.cache
+C:\Users\Public\Development\Projects\AcademicPlatformApisWithEfCore\AcademicPlatformApisWithEfCore\obj\Debug\net5.0\AcademicPlatformApisWithEfCore.csproj.AssemblyReference.cache
