@@ -3,7 +3,6 @@ using AcademicPlatformApisWithEfCore.Infra;
 using AcademicPlatformApisWithEfCore.Infra.EfCore.Repositories;
 using AcademicPlatformApisWithEfCore.Domain.Interfaces.Repositories;
 using AcademicPlatformApisWithEfCore.Domain.Interfaces.Services;
-using AcademicPlatformApisWithEfCore.Domain.Settings;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -11,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using AcademicPlatformApisWithEfCore.Mapper;
+using AcademicPlatformApisWithEfCore.Infra.EfCore;
 
 namespace AcademicPlatformApisWithEfCore
 {
@@ -33,8 +33,8 @@ namespace AcademicPlatformApisWithEfCore
 
             #region Database
 
-            DbSettings dbSettings = Configuration.GetSection("DbSettings").Get<DbSettings>();
-            services.AddSqlServerWithEfCoreRepository(dbSettings.ConnectionString);
+            EfSettings efSettings = Configuration.GetSection("EfSettings").Get<EfSettings>();
+            services.AddSqlServerWithEfCoreRepository(efSettings);
 
             #endregion
 
